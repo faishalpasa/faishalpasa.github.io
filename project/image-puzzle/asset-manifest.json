@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/project/image-puzzle/static/css/main.1741d78b.css",
-    "main.js": "/project/image-puzzle/static/js/main.cc99ce7a.js",
+    "main.js": "/project/image-puzzle/static/js/main.f1da16d3.js",
     "static/js/787.a6f28750.chunk.js": "/project/image-puzzle/static/js/787.a6f28750.chunk.js",
     "index.html": "/project/image-puzzle/index.html",
     "main.1741d78b.css.map": "/project/image-puzzle/static/css/main.1741d78b.css.map",
-    "main.cc99ce7a.js.map": "/project/image-puzzle/static/js/main.cc99ce7a.js.map",
+    "main.f1da16d3.js.map": "/project/image-puzzle/static/js/main.f1da16d3.js.map",
     "787.a6f28750.chunk.js.map": "/project/image-puzzle/static/js/787.a6f28750.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1741d78b.css",
-    "static/js/main.cc99ce7a.js"
+    "static/js/main.f1da16d3.js"
   ]
 }
