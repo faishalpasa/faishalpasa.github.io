@@ -142,11 +142,11 @@ function App() {
           </div>
         </div>
       </header>
-      <main className="bg-gray-800 p-6 flex-1">
-        <p className="text-white text-center md:text-2xl font-semibold">
+      <main className="bg-gray-600 p-6 flex-1">
+        <p className="text-white md:text-2xl font-semibold">
           My creations:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 items-stretch gap-4 md:gap-6 mt-2 p-2 md:mt-6 md:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 items-stretch gap-4 md:gap-6 mt-2 md:mt-6">
           {PORTFOLIOS.map((portfolio) => (
             <div key={portfolio.link} role="presentation" className="cursor-pointer card bg-gray-900 rounded-lg shadow-md transform transition duration-500 ease-in-out hover:scale-105" onClick={() => handleOpenLink(portfolio.link)}>
               <img src={portfolio.imgSrc} alt="portfolio" className="w-full h-36 md:h-48 object-cover rounded-lg" />
