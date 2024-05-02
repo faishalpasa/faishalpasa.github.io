@@ -159,6 +159,15 @@ function App() {
           ))}
         </div>
       </main>
+      <footer className="bg-gray-950 p-4 text-white text-center">
+        <p className="text-xs">
+          ©
+          {' '}
+          {new Date().getFullYear()}
+          {' '}
+          Faishal Pasa
+        </p>
+      </footer>
     </div>
   )
 }
