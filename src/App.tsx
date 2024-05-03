@@ -1,12 +1,13 @@
 /* eslint-disable react/no-danger */
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import Lottie from 'react-lottie'
 
 import * as animationData from './lottie/keyboard.json'
 import './App.css'
 
 const SPEED = 50
-const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and I build things using code.']
+const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and I build ']
+const REPEATED_TEXTS = ['web application', 'mobile application', 'anythings using code.']
 const PORTFOLIOS = [
   {
     imgSrc: 'https://media.licdn.com/dms/image/D5605AQGQBrfrKcM-kg/videocover-low/0/1711075193915?e=1715252400&v=beta&t=Ucc1GbEbu4l2zi6SiEZYa58bHG822vUzwY5hikykhXE',
@@ -62,7 +63,9 @@ const PORTFOLIOS = [
 
 function App() {
   const [textIndex, setTextIndex] = useState(0)
+  // const [repeatedTextIndex, setRepeatedTextIndex] = useState(0)
   const [texts, setTexts] = useState<string[]>([])
+  const [repeatedText, setRepeatedText] = useState<string>('')
   const [isPaused, setIsPaused] = useState(false)
 
   const defaultOptions = {
@@ -99,11 +102,56 @@ function App() {
         setIsPaused(true)
         setTimeout(() => {
           setTextIndex((prev) => prev + 1)
-        }, 700)
+        }, index === 1 ? 1000 : 0)
       }
     }
 
     typeWriter()
+  }
+
+  const runTypeRepeatedText = () => {
+    let i = 0
+    let repeatedTextIndex = 0
+    let newRepeatedText = ''
+
+    function typing() {
+      setIsPaused(false)
+
+      const text = REPEATED_TEXTS[repeatedTextIndex]
+
+      function eraseWriter() {
+        if (i >= 0) {
+          newRepeatedText = text.substring(0, i)
+          setTimeout(eraseWriter, SPEED)
+          setRepeatedText(newRepeatedText)
+
+          i--
+        } else {
+          typing()
+        }
+      }
+
+      if (i < text.length) {
+        newRepeatedText += text.charAt(i)
+        setTimeout(typing, SPEED)
+        setRepeatedText(newRepeatedText)
+
+        i++
+      } else {
+        setIsPaused(true)
+
+        setTimeout(() => {
+          eraseWriter()
+          if (repeatedTextIndex < REPEATED_TEXTS.length - 1) {
+            repeatedTextIndex++
+          } else {
+            repeatedTextIndex = 0
+          }
+        }, repeatedTextIndex < REPEATED_TEXTS.length - 1 ? 700 : 2000)
+      }
+    }
+
+    typing()
   }
 
   useEffect(() => {
@@ -111,10 +159,14 @@ function App() {
       setIsPaused(false)
       runTypeWriter(TEXTS[textIndex], textIndex, setTexts)
     }
+
+    if (textIndex === TEXTS.length) {
+      runTypeRepeatedText()
+    }
   }, [textIndex])
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-600">
       <header className="bg-gray-950 p-4 md:p-6 flex justify-center">
         <div className="flex gap-4 w-full md:max-w-screen-sm">
           <div className="w-[70px] sm:w-[150px]">
@@ -135,6 +187,7 @@ function App() {
             </p>
             <p className="mt-1 sm:mt-2">
               <span className="text-sm md:text-xl font-normal" dangerouslySetInnerHTML={{ __html: texts?.[2] }} />
+              <span className="text-sm md:text-xl font-normal" dangerouslySetInnerHTML={{ __html: repeatedText }} />
               {textIndex > 1 && (
               <span className="animate-typeCarret text-sm md:text-xl">|</span>
               )}
@@ -142,17 +195,14 @@ function App() {
           </div>
         </div>
       </header>
-      <main className="bg-gray-600 p-6 flex-1">
-        <p className="text-white md:text-2xl font-semibold">
-          My creations:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 items-stretch gap-4 md:gap-6 mt-2 md:mt-6">
+      <main className="m-auto p-6 flex-1 max-w-screen-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 md:gap-6">
           {PORTFOLIOS.map((portfolio) => (
             <div key={portfolio.link} role="presentation" className="cursor-pointer card bg-gray-900 rounded-lg shadow-md transform transition duration-500 ease-in-out hover:scale-105" onClick={() => handleOpenLink(portfolio.link)}>
               <img src={portfolio.imgSrc} alt="portfolio" className="w-full h-36 md:h-48 object-cover rounded-lg" />
-              <div className="mt-2 p-2 md:mt-4 md:p-4">
+              <div className="p-2 md:p-4">
                 <span className="text-white text-xs md:text-base">
-                  {truncate(portfolio.description)}
+                  {truncate(portfolio.description, 100)}
                 </span>
               </div>
             </div>
