@@ -10,7 +10,7 @@ const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and
 const REPEATED_TEXTS = ['web application', 'mobile application', 'anythings using code.']
 const PORTFOLIOS = [
   {
-    imgSrc: 'https://media.licdn.com/dms/image/D5605AQGQBrfrKcM-kg/videocover-low/0/1711075193915?e=1715252400&v=beta&t=Ucc1GbEbu4l2zi6SiEZYa58bHG822vUzwY5hikykhXE',
+    imgSrc: 'https://media.licdn.com/dms/image/D5605AQGQBrfrKcM-kg/videocover-high/0/1711075193755?e=2147483647&v=beta&t=nMUpKfsKbK17UpsxMOERGg-0N7ej3angAFv2F23xclU',
     description: `Awal tahun dikasih task yang "gak biasa". Ngebuat story ala instagram untuk campaign Ramadan 2024 Bareksa dengan isi konten yang dinamis dan animasi yang "wah ini bisa di-implement gak ya?".
 
   Bermodal css animation dan ngitungin animation delay, akhirnya task kelar, lolos QA, dan bisa deploy ke production 😄.
@@ -19,43 +19,43 @@ const PORTFOLIOS = [
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7176895408705601536/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7176895408705601536%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/D5605AQFAg-nSU0-7gg/videocover-high/0/1692199650606?e=1715252400&v=beta&t=nLAFeL8Eost2facTt6s1MBz-oeqcB95JA8984aikt4g',
+    imgSrc: 'https://media.licdn.com/dms/image/D5605AQFAg-nSU0-7gg/videocover-high/0/1692199650606?e=2147483647&v=beta&t=T3qqoIXgRphXTdExa1l9EOLRgxfpXo2RCatrKMVgOTw',
     description: 'Dulu waktu sekolah, pernah jadi petugas pengibar bendera. Bendera yang dikibar sama lagu Indonesia Raya balap2an karna gk tau tempo nya. Akhirnya jadi inspirasi buat mini game ini, sekalian untuk memperingati hari kemerdekaan Indonesia ke 78 🇮🇩',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7097599814149836800/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7097599814149836800%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/D5605AQHgThyB0O82Pw/videocover-high/0/1677738595762?e=1715252400&v=beta&t=BSEdyFGLOAdDj-DDl46KLfnrdUrOjGlOmtzqwIFJV30',
+    imgSrc: 'https://media.licdn.com/dms/image/D5605AQHgThyB0O82Pw/videocover-high/0/1677738595762?e=2147483647&v=beta&t=U6WFCKPT9UurEvMFWn-LfDoJzCq_DGPglCqsUM33H9o',
     description: `Keresahan seorang bapak2. Anak saya lagi seneng main puzzle, kalo satu set udh bosen, minta beli set puzzle baru, lama2 boncos juga haha.
     Akhirnya saya coba buat game puzzle simple. Jadi ketika bosen, tinggal ubah set image nya. Alhamdulillah lolos QA oleh anak saya sendiri, anteng ketika lagi di suapin. Paling di atur screen time nya aja.`,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7036945722738446337/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7036945722738446337%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/C4D05AQH1wEvwtK96Qw/videocover-high/0/1654908146766?e=1715252400&v=beta&t=vdNseU37sPJ6u2unGpHraSggGAUFI2pYwemnHwSgUL0',
+    imgSrc: 'https://media.licdn.com/dms/image/C4D05AQH1wEvwtK96Qw/videocover-high/0/1654908146766?e=2147483647&v=beta&t=k47qg7fu_nfjU9gzYdX9plIrYjV7Gv_YRXP91qsyJDg',
     description: `Kemarin liat orang orang pada share di instagram stories list musik yang mereka dengar dengan bentuk diagram pie. Pas googling "Spotify Pie" (https://lnkd.in/dkfuezv4), ternyata viral juga dan masuk ke berita onlen. Penasaran akhirnya nyari Spotify API dan nyoba bikin sendiri Spotify Top List.
 
     List API nya lumayan lengkap sih untuk free user, ya paling minus nya kurang url preview musik nya aja biar bisa di play.`,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6941187905872621568/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6941187905872621568%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/C5605AQEMW1FKbB8L7A/videocover-low/0/1642173474052?e=1715252400&v=beta&t=pqixf1_yMhVyNNLoYUiXgUnMu_O3RlpEVnp2lwF0ukY',
+    imgSrc: 'https://media.licdn.com/dms/image/C5605AQEMW1FKbB8L7A/videocover-high/0/1642173474073?e=2147483647&v=beta&t=zkElpGBsSPYuh_QOL893BFW8B8u6tEE4Q-B26tVcSQo',
     description: `Mini game puzzle, mobile responsive dengan custom hook.
     Ohya, buah nya bisa beli di TaniHub ya haha`,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6887774836131803136/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6887774836131803136%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/C5605AQGPyZ2gG0pbdg/videocover-low/0/1640966723821?e=1715252400&v=beta&t=qi7k5bsBmYNNt3f9LYqJgQNUWQ1V8M521wluB79VYQs',
+    imgSrc: 'https://media.licdn.com/dms/image/C5605AQGPyZ2gG0pbdg/videocover-high/0/1640966723852?e=2147483647&v=beta&t=Fqrsy4J1FU-sDcG-HuJXfEd8YAXFmnDC4qMoUTU5yNE',
     description: 'Fireworks using vanilla css and js',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6882713344353144832/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6882713344353144832%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/C5605AQEnG_JEVpHg6g/videocover-low/0/1639983563102?e=1715252400&v=beta&t=Ur8X_UyHDRtelvqu7ZGySReTSuJtjUShBMNdWQNE-yo',
+    imgSrc: 'https://media.licdn.com/dms/image/C5605AQEnG_JEVpHg6g/videocover-high/0/1639983563819?e=2147483647&v=beta&t=ulhcaFMC_NrC6-Gm4-GhYqwvRCixnhJz5lVjkzqD0HM',
     description: `Kemarin di beranda youtube ada video membuat ui keyboard (lebih tepat nya sih keycaps) dengan css (https://lnkd.in/g2VVwfut). Ya sambil ngisi waktu luang, saya tonton. Terus dapet ide, gimana kalo bikin full keyboard Keychron K2 pake css. Terus dapet ide lagi, coba deh ditambahin efek backlight.
 
     Kurang puas, mau nambah lagi efek typing. Ini lama2 bisa jadi kaya web typing speed haha`,
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6878589670150819840/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6878589670150819840%29',
   },
   {
-    imgSrc: 'https://media.licdn.com/dms/image/C5605AQGMa8IlSn260Q/videocover-low/0/1609072894695?e=1715252400&v=beta&t=uBKn3kO4oqPu07kQPDjgscmA-W4yw-B2FW1RP3iCxrg',
+    imgSrc: 'https://media.licdn.com/dms/image/C5605AQGMa8IlSn260Q/videocover-high/0/1609072894854?e=2147483647&v=beta&t=mE77rI_XbIVA-Yb0qmLv9QswX7GJ7Dw2nJHSSHpGQ08',
     description: 'Seminggu terakhir 2020, dikasih task ngerjain tech debt yang bejibun. Hasil dari kebosanan, bermodal react hook, local storage dan jss, jadilah game card match. Semoga aja 2021 point nya bisa dituker jadi voucher belanja haha',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:6748941109151588352/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6748941109151588352%29',
   },
