@@ -1,5 +1,5 @@
 /* eslint-disable react/no-danger */
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 import Lottie from 'react-lottie'
 
 import * as animationData from './lottie/keyboard.json'
@@ -9,6 +9,11 @@ const SPEED = 50
 const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and I build ']
 const REPEATED_TEXTS = ['web application', 'mobile application', 'anythings using code.']
 const PORTFOLIOS = [
+  {
+    imageSrc: 'https://media.licdn.com/dms/image/D5605AQEarxivmjin3A/feedshare-thumbnail_720_1280/0/1716472325594?e=1720306800&v=beta&t=-HL9xMHuz9e4-PdQaf3SVe43h8ClwIbZDbz0jPi4vpI',
+    description: 'Project game web yang agak serius. Awalnya cuma pengen bikin game kayak dino chrome bertema mario bros. Tapi, ada bisikan2 gaib dari rekan pegawhy yang memberikan ide2 absurd. Akhirnya, lahirlah game parody ini. Tjoean Run, perjuangan pegawhy berlari mencari cuan biar bebas finansial 🤣 .',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7199740945905430528/',
+  },
   {
     imgSrc: 'https://media.licdn.com/dms/image/D5605AQGQBrfrKcM-kg/videocover-high/0/1711075193755?e=2147483647&v=beta&t=nMUpKfsKbK17UpsxMOERGg-0N7ej3angAFv2F23xclU',
     description: `Awal tahun dikasih task yang "gak biasa". Ngebuat story ala instagram untuk campaign Ramadan 2024 Bareksa dengan isi konten yang dinamis dan animasi yang "wah ini bisa di-implement gak ya?".
