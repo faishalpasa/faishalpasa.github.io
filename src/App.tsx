@@ -10,7 +10,7 @@ const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and
 const REPEATED_TEXTS = ['web application', 'mobile application', 'anythings using code.']
 const PORTFOLIOS = [
   {
-    imageSrc: 'https://media.licdn.com/dms/image/D5605AQEarxivmjin3A/feedshare-thumbnail_720_1280/0/1716472325594?e=1720306800&v=beta&t=-HL9xMHuz9e4-PdQaf3SVe43h8ClwIbZDbz0jPi4vpI',
+    imageSrc: 'https://media.licdn.com/dms/image/D5605AQEarxivmjin3A/feedshare-thumbnail_720_1280/0/1716472325594?e=2147483647&v=beta&t=Aj1WVwStGRDvruKfVKE_hBLVmxxdwWRBFe7ZGonfkbY',
     description: 'Project game web yang agak serius. Awalnya cuma pengen bikin game kayak dino chrome bertema mario bros. Tapi, ada bisikan2 gaib dari rekan pegawhy yang memberikan ide2 absurd. Akhirnya, lahirlah game parody ini. Tjoean Run, perjuangan pegawhy berlari mencari cuan biar bebas finansial 🤣 .',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7199740945905430528/',
   },
