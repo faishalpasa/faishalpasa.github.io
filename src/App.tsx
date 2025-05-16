@@ -8,7 +8,7 @@ import './App.css'
 
 const SPEED = 50
 const TEXTS = ['Hi, I\'m Faishal Pasa', ' (Uje)', 'I\'m a frontend developer and I build ']
-const REPEATED_TEXTS = ['web application', 'mobile application', 'anythings using code.']
+const REPEATED_TEXTS = ['web application', 'mobile application', 'games', 'anythings using code.']
 
 const SKILLS = [
   { name: 'React', level: 90 },
@@ -193,6 +193,8 @@ function App() {
     }
   }, [textIndex])
 
+  console.log(textIndex)
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -216,19 +218,26 @@ function App() {
 
             <div className="text-white space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" dangerouslySetInnerHTML={{ __html: texts?.[0] }} />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500" dangerouslySetInnerHTML={{ __html: texts?.[0] }} />
                 <span className="text-orange-400" dangerouslySetInnerHTML={{ __html: texts?.[1] }} />
                 {textIndex <= 1 && (
                   <span className="animate-typeCarret">|</span>
                 )}
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300">
-                <span dangerouslySetInnerHTML={{ __html: texts?.[2] }} />
-                <span className="text-blue-400" dangerouslySetInnerHTML={{ __html: repeatedText }} />
-                {textIndex > 1 && (
+              <div>
+                <p className="text-xl md:text-2xl text-gray-300">
+                  <span dangerouslySetInnerHTML={{ __html: texts?.[2] }} />
+                  {textIndex > 1 && textIndex <= 2 && (
                   <span className="animate-typeCarret">|</span>
-                )}
-              </p>
+                  )}
+                </p>
+                <p className="text-xl md:text-2xl text-gray-300">
+                  <span className="text-blue-400" dangerouslySetInnerHTML={{ __html: repeatedText }} />
+                  {textIndex === 3 && (
+                  <span className="animate-typeCarret">|</span>
+                  )}
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 flex gap-6">
@@ -271,7 +280,7 @@ function App() {
       <main className="container mx-auto px-4 py-16">
         <section className="mb-24">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">My Skills</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">My Skills</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SKILLS.map((skill) => (
@@ -295,7 +304,7 @@ function App() {
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: 'easeOut' }}
-                    className="h-full bg-gradient-to-r from-blue-500 to-purple-500"
+                    className="h-full bg-gradient-to-r from-blue-300 to-blue-500"
                   />
                 </div>
               </motion.div>
@@ -305,7 +314,7 @@ function App() {
 
         <section>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Featured Projects</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">Featured Projects</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PORTFOLIOS.map((portfolio, index) => (
