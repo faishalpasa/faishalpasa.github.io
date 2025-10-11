@@ -41,6 +41,11 @@ const SKILLS = [
 
 const PORTFOLIOS = [
   {
+    imgSrc: 'https://media.licdn.com/dms/image/v2/D5605AQGliCTunISmbg/videocover-high/B56ZhTQzwXHcCM-/0/1753743583062?e=1760778000&v=beta&t=-HSadxHutyqcmeEDvvrVBxlVvOviEany_0wvrPd0CiA',
+    description: 'Lagi bersih bersih folder, ketemu asset fitur invesment summary tahun 2022 Bareksa. Asset gambar nya berupa kartu2, dapet ide bikin game idle + card merge.',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7355839572313845761/',
+  },
+  {
     imgSrc: 'https://media.licdn.com/dms/image/D5605AQEarxivmjin3A/feedshare-thumbnail_720_1280/0/1716472325594?e=2147483647&v=beta&t=Aj1WVwStGRDvruKfVKE_hBLVmxxdwWRBFe7ZGonfkbY',
     description: 'Project game web yang agak serius. Awalnya cuma pengen bikin game kayak dino chrome bertema mario bros. Tapi, ada bisikan2 gaib dari rekan pegawhy yang memberikan ide2 absurd. Akhirnya, lahirlah game parody ini. Tjoean Run, perjuangan pegawhy berlari mencari cuan biar bebas finansial 🤣 .',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7199740945905430528/',
