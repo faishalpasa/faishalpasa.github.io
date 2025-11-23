@@ -68,7 +68,7 @@ const SKILLS = [
 
 const PORTFOLIOS = [
   {
-    imgSrc: 'https://media.licdn.com/dms/image/v2/D5605AQGliCTunISmbg/videocover-high/B56ZhTQzwXHcCM-/0/1753743583062?e=1760778000&v=beta&t=-HSadxHutyqcmeEDvvrVBxlVvOviEany_0wvrPd0CiA',
+    imgSrc: 'https://media.licdn.com/dms/image/v2/D5605AQGliCTunISmbg/videocover-high/B56ZhTQzwXHcCM-/0/1753743583062?e=1764514800&v=beta&t=XKiqLw_cx7Sqlt5C9DrDTy1_UXOAHsfVa4M6OjKNPAY',
     description: 'Lagi bersih bersih folder, ketemu asset fitur invesment summary tahun 2022 Bareksa. Asset gambar nya berupa kartu2, dapet ide bikin game idle + card merge.',
     link: 'https://www.linkedin.com/feed/update/urn:li:activity:7355839572313845761/',
   },
@@ -278,13 +278,13 @@ function App() {
                 <p className="">
                   <span dangerouslySetInnerHTML={{ __html: texts?.[2] }} />
                   {textIndex > 1 && textIndex <= 2 && (
-                  <span className="animate-typeCarret">|</span>
+                    <span className="animate-typeCarret">|</span>
                   )}
                 </p>
                 <p className="">
                   <span className="text-blue-400" dangerouslySetInnerHTML={{ __html: repeatedText }} />
                   {textIndex === 3 && (
-                  <span className="animate-typeCarret">|</span>
+                    <span className="animate-typeCarret">|</span>
                   )}
                 </p>
               </div>
@@ -347,19 +347,16 @@ function App() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
-                  className={`relative mb-12 ${
-                    index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
-                  } pl-12 md:pl-0 md:w-1/2`}
+                  className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
+                    } pl-12 md:pl-0 md:w-1/2`}
                 >
                   {/* Timeline dot */}
-                  <div className={`absolute left-[11px] top-0 w-5 h-5 bg-blue-500 rounded-full border-4 border-gray-900 z-10 ${
-                    index % 2 === 0 ? 'md:left-auto md:right-[-9px]' : 'md:left-[-9px]'
-                  }`}
+                  <div className={`absolute left-[11px] top-0 w-5 h-5 bg-blue-500 rounded-full border-4 border-gray-900 z-10 ${index % 2 === 0 ? 'md:left-auto md:right-[-9px]' : 'md:left-[-9px]'
+                    }`}
                   />
 
-                  <div className={`bg-gray-700/80 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-600/80 transition-all border border-gray-600/30 ${
-                    index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
-                  }`}
+                  <div className={`bg-gray-700/80 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-600/80 transition-all border border-gray-600/30 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
+                    }`}
                   >
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-white mb-2 md:mb-0">
