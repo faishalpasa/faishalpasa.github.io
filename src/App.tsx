@@ -348,15 +348,15 @@ function App() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
                   className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
-                    } pl-12 md:pl-0 md:w-1/2`}
+                  } pl-12 md:pl-0 md:w-1/2`}
                 >
                   {/* Timeline dot */}
                   <div className={`absolute left-[11px] top-0 w-5 h-5 bg-blue-500 rounded-full border-4 border-gray-900 z-10 ${index % 2 === 0 ? 'md:left-auto md:right-[-9px]' : 'md:left-[-9px]'
-                    }`}
+                  }`}
                   />
 
                   <div className={`bg-gray-700/80 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-600/80 transition-all border border-gray-600/30 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
-                    }`}
+                  }`}
                   >
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-white mb-2 md:mb-0">
