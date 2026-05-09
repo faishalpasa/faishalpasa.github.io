@@ -1,16 +1,20 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
 
-import { SKILLS } from '@/constants/app'
+import { SKILLS } from "@/constants/app"
 
 const SkillsSection = () => (
   <section className="mb-24">
     <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">Skills</span>
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">
+        Skills
+      </span>
     </h2>
     <div className="space-y-12">
       {SKILLS.map((category) => (
         <div key={category.category}>
-          <h3 className="text-2xl font-semibold text-white mb-6">{category.category}</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">
+            {category.category}
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {category.skills.map((skill) => (
               <motion.div
@@ -25,26 +29,47 @@ const SkillsSection = () => (
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, index) => {
                       const starNumber = index + 1
-                      const isPartialStar = skill.level % 1 !== 0 && Math.ceil(skill.level) === starNumber
+                      const isPartialStar =
+                        skill.level % 1 !== 0 &&
+                        Math.ceil(skill.level) === starNumber
                       const isFullStar = skill.level >= starNumber
                       const decimalPart = skill.level % 1
-                      const fillPercentage = isPartialStar ? Math.round(decimalPart * 100) : 0
-                      const starColor = isFullStar ? 'text-yellow-400' : 'text-gray-600'
+                      const fillPercentage = isPartialStar
+                        ? Math.round(decimalPart * 100)
+                        : 0
+                      const starColor = isFullStar
+                        ? "text-yellow-400"
+                        : "text-gray-600"
                       const gradientId = `partial-${skill.name}-${index}`
 
                       return (
                         <svg
-                          // eslint-disable-next-line react/no-array-index-key
                           key={index}
                           className={`w-5 h-5 ${starColor}`}
-                          fill={isPartialStar ? `url(#${gradientId})` : 'currentColor'}
+                          fill={
+                            isPartialStar
+                              ? `url(#${gradientId})`
+                              : "currentColor"
+                          }
                           viewBox="0 0 20 20"
                         >
                           {isPartialStar && (
                             <defs>
-                              <linearGradient id={gradientId} x1="0" x2="100%" y1="0" y2="0">
-                                <stop offset={`${fillPercentage}%`} stopColor="rgb(250, 204, 21)" />
-                                <stop offset={`${fillPercentage}%`} stopColor="rgb(75, 85, 99)" />
+                              <linearGradient
+                                id={gradientId}
+                                x1="0"
+                                x2="100%"
+                                y1="0"
+                                y2="0"
+                              >
+                                <stop
+                                  offset={`${fillPercentage}%`}
+                                  stopColor="rgb(250, 204, 21)"
+                                />
+                                <stop
+                                  offset={`${fillPercentage}%`}
+                                  stopColor="rgb(75, 85, 99)"
+                                />
                               </linearGradient>
                             </defs>
                           )}

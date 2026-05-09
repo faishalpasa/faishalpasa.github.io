@@ -1,16 +1,18 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
 
-import { PORTFOLIOS } from '@/constants/app'
+import { PORTFOLIOS } from "@/constants/app"
 
 const PortfoliosSection = () => {
   const handleOpenLink = (link: string) => {
-    window.open(link, '_blank')
+    window.open(link, "_blank")
   }
 
   return (
     <section>
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">Featured Projects</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">
+          Featured Projects
+        </span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {PORTFOLIOS.map((portfolio, index) => (
@@ -38,8 +40,18 @@ const PortfoliosSection = () => {
                 </p>
                 <div className="mt-4 flex items-center text-blue-400 text-sm">
                   View Project
-                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg
+                    className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </div>
               </div>
