@@ -9,8 +9,8 @@ import {
   REPEATED_TEXTS,
   TEXT_SPEED,
   TEXTS,
-} from '../constants/app'
-import * as animationData from '../lottie/keyboard.json'
+} from '@/constants/app'
+import * as animationData from '@/lottie/keyboard.json'
 
 const Lottie = (LottieLib as unknown as { default: typeof LottieLib }).default ?? LottieLib
 

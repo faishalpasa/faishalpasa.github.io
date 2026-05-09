@@ -56,7 +56,7 @@ Record the decision, the reason, and any rejected alternatives.
 ### Deploy via gh-pages
 - **Date:** project inception
 - **Status:** accepted
-- **Decision:** Deploy with `npm run deploy` which runs `gh-pages -d build`
+- **Decision:** Deploy with `npm run deploy` which runs `gh-pages -d dist`
 - **Why:** Free hosting via GitHub Pages; zero infra to manage
 - **Alternatives rejected:** Vercel/Netlify — unnecessary for a static site already on GitHub
 - **Applies to:** Deployment workflow

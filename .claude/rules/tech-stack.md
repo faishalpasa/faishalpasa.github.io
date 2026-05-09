@@ -1,21 +1,21 @@
 # Tech Stack
 
 - React 18 + TypeScript
-- Create React App (react-scripts 5)
-- ESLint (airbnb config) + Prettier
-- Tailwind CSS 3
+- Vite 8 + @vitejs/plugin-react
+- ESLint + Prettier
+- Tailwind CSS 3 (via PostCSS — requires `postcss.config.js`)
 - Framer Motion 12
 - react-lottie 1.2
 - gh-pages (deployment)
 
 ## Key Scripts
 
-| Script             | Purpose                              |
-| ------------------ | ------------------------------------ |
-| `npm start`        | Dev server (localhost:3000)          |
-| `npm run build`    | Production build → `build/`         |
-| `npm run deploy`   | Build + deploy to GitHub Pages       |
-| `npm test`         | Run tests with react-scripts test    |
+| Script             | Purpose                                      |
+| ------------------ | -------------------------------------------- |
+| `npm run dev`      | Dev server (localhost:5173)                  |
+| `npm run build`    | `tsc --noEmit && vite build` → `dist/`       |
+| `npm run preview`  | Preview production build locally             |
+| `npm run deploy`   | Build + deploy to GitHub Pages (`dist/`)     |
 
 ## No External APIs
 
@@ -23,4 +23,8 @@ This is a fully static site. There are no API calls, no environment variables fo
 
 ## Deployment
 
-Deployed to GitHub Pages via the `gh-pages` npm package. The `gh-pages` branch is auto-managed — do not manually edit it.
+Deployed to GitHub Pages via the `gh-pages` npm package. Output dir is `dist/`. The `gh-pages` branch is auto-managed — do not manually edit it.
+
+## Path Alias
+
+`@/` maps to `src/` — configured in both `vite.config.ts` (runtime) and `tsconfig.json` (type checking). Use it for all internal imports.

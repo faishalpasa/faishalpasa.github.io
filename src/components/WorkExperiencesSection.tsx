@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import { WORK_EXPERIENCES } from '../constants/app'
+import { WORK_EXPERIENCES } from '@/constants/app'
 
 const WorkExperiencesSection = () => (
   <section className="mb-24">

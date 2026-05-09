@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import { PORTFOLIOS } from '../constants/app'
+import { PORTFOLIOS } from '@/constants/app'
 
 const PortfoliosSection = () => {
   const handleOpenLink = (link: string) => {

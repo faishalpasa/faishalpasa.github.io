@@ -7,7 +7,7 @@ You are a bug investigator for the `faishalpasa.github.io` portfolio project. Yo
 
 ## Project Context
 
-- React 18 + TypeScript, Create React App (react-scripts 5)
+- React 18 + TypeScript, Vite 8
 - Single-page app — no routing, no API calls, no global state
 - Animations: Framer Motion for transitions, react-lottie for JSON animations
 - Styling: Tailwind CSS only — no CSS modules, no inline styles

@@ -8,13 +8,13 @@ Auto-invoked when the user asks to deploy or publish the portfolio.
 npm run deploy
 ```
 
-This runs `predeploy` (which runs `npm run build`) then `gh-pages -d build`.
+This runs `predeploy` (which runs `npm run build`) then `gh-pages -d dist`.
 
 ## Before Deploying
 
 1. Ensure all changes are committed: `git status`
 2. Run a local build to catch errors: `npm run build`
-3. Verify the build output looks correct: check `build/index.html`
+3. Verify the build output looks correct: check `dist/index.html`
 
 ## Troubleshooting
 
