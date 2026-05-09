@@ -25,7 +25,7 @@ export const TYPESCRIPT_CONFIG = {
   languageOptions: {
     parser: tsparser,
     parserOptions: {
-      project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.test.json'],
+      project: ['./tsconfig.eslint.json'],
       ecmaFeatures: {
         jsx: true
       }
@@ -201,7 +201,7 @@ export const TYPESCRIPT_CONFIG = {
       version: 'detect'
     },
     'import/resolver': {
-      typescript: { project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.test.json'] },
+      typescript: { project: ['./tsconfig.eslint.json'] },
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
       }
@@ -359,7 +359,7 @@ export const JAVASCRIPT_CONFIG = {
       version: 'detect'
     },
     'import/resolver': {
-      typescript: { project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.test.json'] },
+      typescript: { project: ['./tsconfig.eslint.json'] },
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
       }
@@ -375,7 +375,7 @@ export const TEST_CONFIG = {
   languageOptions: {
     parser: tsparser,
     parserOptions: {
-      project: ['./tsconfig.test.json'],
+      project: ['./tsconfig.eslint.json'],
       ecmaFeatures: {
         jsx: true
       }
