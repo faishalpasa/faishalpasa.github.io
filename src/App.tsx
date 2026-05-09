@@ -1,6 +1,8 @@
 /* eslint-disable react/no-danger */
 import { useEffect, useState } from 'react'
-import Lottie from 'react-lottie'
+import LottieLib from 'react-lottie'
+
+const Lottie = (LottieLib as unknown as { default: typeof LottieLib }).default ?? LottieLib
 import { motion } from 'framer-motion'
 
 import * as animationData from './lottie/keyboard.json'
