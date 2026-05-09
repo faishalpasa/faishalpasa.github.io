@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import "./index.css"
 import AskPage from "@/pages/AskPage"
+import NotFoundPage from "@/pages/NotFoundPage"
 
 import App from "./App"
 
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/ask" element={<AskPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
     <Analytics />
   </BrowserRouter>,
