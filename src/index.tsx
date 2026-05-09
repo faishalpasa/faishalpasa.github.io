@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import ReactDOM from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
@@ -14,5 +15,6 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/ask" element={<AskPage />} />
     </Routes>
+    <Analytics />
   </BrowserRouter>,
 )
