@@ -16,7 +16,7 @@ const AskPage: React.FC = () => (
     }}
   >
     <img
-      src="/ask/images/diagram-black.png"
+      src="/images/diagram-black.png"
       alt="Diagram"
       style={{
         maxWidth: "100%",
